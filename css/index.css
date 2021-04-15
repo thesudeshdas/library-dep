@@ -1,0 +1,214 @@
+/* fonts - ubuntu, roboto, lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Ubuntu&display=swap");
+
+:root {
+  --ubuntu: "Ubuntu", sans-serif;
+  --lato: "Lato", sans-serif;
+  --roboto: "Roboto", sans-serif;
+
+  --theme-primary: #7952b3;
+  --theme-secondary: #8764bb;
+  --bg-primary-main: #efeff1;
+  --bg-primary-alternate: #f7f7f8;
+  --bg-secondary-main: #0e0e10;
+  --bg-secondary-alternate: #18181b;
+  --text-primary: #262626;
+  --text-alternate: #f1f1f1;
+
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-m: 1rem;
+  --space-ml: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 5rem;
+
+  --font-xs: 0.5rem;
+  --font-s: 0.75rem;
+  --font-sm: 0.9rem;
+  --font-m: 1rem;
+  --font-ml: 1.2rem;
+  --font-l: 1.5rem;
+  --font-xl: 2rem;
+  --font-xxl: 2.5rem;
+
+  --line-thin: 0.063rem;
+  --line-medium: 0.125rem;
+  --line-thick: 0.188rem;
+
+  --z-10: 10;
+}
+
+html {
+  height: 100px;
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary-main);
+  color: var(--text-primary);
+  font-family: var(--roboto);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  color: var(--text-primary);
+}
+
+.d-navigation-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 6vh;
+  background-color: var(--theme-primary);
+  padding: var(--space-s);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d-navigation-top-brand {
+  margin: 0;
+  font-size: var(--font-xl);
+  color: var(--text-alternate);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.d-navigation-top-menu-opener {
+  color: var(--text-alternate);
+}
+
+.d-navigation-top-container-menu {
+  height: 93vh;
+  padding-top: 7vh;
+  display: none;
+}
+
+.backdrop {
+  height: 61vh;
+  opacity: 0.5;
+}
+
+.d-navigation-top-menu {
+  height: 30vh;
+  background-color: var(--theme-secondary);
+  list-style: none;
+  padding: var(--space-s);
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.d-navigation-top-container-menu-item {
+  margin: 0;
+  color: var(--text-alternate);
+  font-size: var(--font-xl);
+  text-decoration: none;
+}
+
+.d-navigation-top-container-menu-item-icons {
+  color: var(--text-alternate);
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-navigation-top-container-menu-item-icons a {
+  color: var(--text-alternate);
+}
+
+.d-navigation-top-container-navigation-link {
+  display: none;
+}
+
+.d-navigation-top-icon {
+  display: none;
+}
+
+main {
+  min-height: 80vh;
+  padding: 10vh var(--space-l);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-family: var(--lato);
+  font-weight: bolder;
+}
+
+.sub-heading {
+  font-family: var(--ubuntu);
+}
+
+main a {
+  text-decoration: none;
+}
+
+.button-get-started {
+  background-color: var(--theme-secondary);
+  color: var(--text-alternate);
+  font-family: var(--ubuntu);
+  font-size: var(--font-l);
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-m);
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: var(--space-l);
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .d-navigation-top-container-brand-actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .d-navigation-top-brand {
+    font-size: var(--font-l);
+    margin: 0 var(--space-sm);
+  }
+
+  .d-navigation-top-container-navigation-link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  .d-navigation-top-navigation-link {
+    text-decoration: none;
+    color: var(--text-alternate);
+    margin: 0 var(--space-s);
+  }
+
+  .d-navigation-top-icon {
+    display: inline-block;
+    color: var(--text-alternate);
+    margin: 0 var(--space-s);
+    font-size: var(--font-s);
+  }
+
+  .d-navigation-top-menu-opener {
+    display: none;
+  }
+
+  .d-navigation-top-container-menu {
+    display: none;
+  }
+}
+
+.active-link {
+  border-bottom: 1px solid var(--text-alternate);
+  font-weight: bold;
+}
