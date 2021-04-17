@@ -1,0 +1,10 @@
+.card {
+  height: 40vw;
+  border: var(--line-thin) solid var(--bg-alternate);
+}
+
+@media (min-width: 992px) {
+  .card {
+    height: 35vh;
+  }
+}

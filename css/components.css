@@ -1,2 +1,4 @@
+@import url("../components/card/card.css");
+@import url("../components/card-product/cardProduct.css");
 @import url("../components/navigation-bottom/navigationBottom.css");
-@import url("../components//card-product/cardProduct.css");
+@import url("../components/rating/rating.css");

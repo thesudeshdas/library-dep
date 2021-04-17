@@ -87,7 +87,7 @@
   font-size: var(--font-s);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .card-product-container-image {
     width: 35vh;
   }
