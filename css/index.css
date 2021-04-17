@@ -15,6 +15,10 @@
   --text-primary: #262626;
   --text-alternate: #f1f1f1;
 
+  --custom-rating-gold: #f5c634;
+  --custom-heart: #ef4444;
+  --custom-product-background: #f6f6f6;
+
   --space-xs: 0.25rem;
   --space-s: 0.5rem;
   --space-sm: 0.75rem;

@@ -1,0 +1,124 @@
+.card-product-horizontal {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-product-container-image {
+  position: relative;
+  width: 40vw;
+  background: var(--custom-product-background);
+}
+
+.card-product-image {
+  height: 100%;
+  max-width: 40vw;
+}
+
+.card-product-wishlist {
+  position: absolute;
+  bottom: var(--space-s);
+  right: var(--space-xs);
+  color: var(--custom-heart);
+  font-size: var(--font-ml);
+  cursor: pointer;
+}
+
+.card-product-description {
+  width: 100%;
+  padding: var(--space-s);
+}
+
+.card-product-name {
+  font-size: var(--font-m);
+}
+
+.card-product-rating {
+  margin-left: -0.25rem;
+}
+
+.card-product-container-price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.card-product-discounted-price {
+  font-size: var(--font-m);
+}
+
+.card-product-original-price {
+  margin: var(--space-s);
+  font-size: var(--font-s);
+  text-decoration: line-through;
+}
+
+.card-product-discount {
+  font-size: var(--font-s);
+}
+
+.cart-product-primary-button-icon {
+  display: inline-block;
+  margin-right: var(--space-xs);
+  transform: translateY(10%);
+}
+
+.card-product-primary-button {
+  position: absolute;
+  bottom: var(--space-s);
+}
+
+.card-product-horizontal-container-quantity {
+  position: absolute;
+  bottom: var(--space-s);
+  border: var(--line-medium) solid var(--bg-primary-alternate);
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+.card-product-horizontal-quantity-action {
+  background-color: var(--bg-primary-alternate);
+  color: var(--text-alternate);
+}
+
+.card-product-horizontal-quantity {
+  padding: var(--space-xs) var(--space-m);
+  font-size: var(--font-s);
+}
+
+@media (min-width: 768px) {
+  .card-product-container-image {
+    width: 35vh;
+  }
+
+  .card-product-image {
+    height: 100%;
+    max-width: 35vh;
+  }
+
+  .card-product-wishlist {
+    font-size: var(--font-xl);
+    right: var(--space-s);
+  }
+
+  .card-product-description {
+    padding: var(--space-m);
+  }
+
+  .card-product-name {
+    font-size: var(--font-ml);
+  }
+
+  .card-product-discounted-price {
+    font-size: var(--font-ml);
+  }
+
+  .card-product-primary-button {
+    bottom: var(--space-m);
+  }
+
+  .card-product-horizontal-container-quantity {
+    bottom: var(--space-m);
+  }
+}
