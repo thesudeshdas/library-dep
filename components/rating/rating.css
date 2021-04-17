@@ -1,0 +1,10 @@
+.rating {
+  color: var(--custom-rating-gold);
+  font-size: var(--font-m);
+}
+
+@media (min-width: 576px) {
+  .rating {
+    font-size: var(--font-ml);
+  }
+}
